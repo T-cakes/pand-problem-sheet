@@ -5,7 +5,7 @@
 import math
 def round_half_up(n, decimals=0):
     multiplier = 10 ** decimals
-    return math.floor(n*multiplier + 0.5) / multiplier
+    return math.floor(n*multiplier + 0.005) / multiplier
 #inputs for height and weight
 weight = float (input ("enter weight(KG): "))
 height = float (input ("enter height(CM): "))
