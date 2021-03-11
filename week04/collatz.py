@@ -27,16 +27,13 @@ while i != 1:
     #will divide by 2 if modulus i is 0
     if n == 0:
         i = int(i / 2)
-        
-        #ammends i to printed result
-        result += str(i) + " "
     
     #will multiply by 3 and add 1 if modulus i/2 is not 0
     else:
         i = int(i * 3 + 1)
         
-        #ammends i to printed result
-        result += str(i) + " "
+    #ammends i to printed result
+    result += str(i) + " "
 
 #prints the end result
 print(result)
