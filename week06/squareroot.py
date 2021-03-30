@@ -1,3 +1,7 @@
+#This program squares a number without using built in functions
+
+#author: Stephen Caulfield
+
 def sqrt(num):
     y = 0.0
     x = 1.0

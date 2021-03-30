@@ -1,3 +1,8 @@
+#This program calculates the number of e's in a text file
+# obtained from an argument on the command line
+
+#author: Stephen Caulfield
+
 import sys
 
 y = 0
