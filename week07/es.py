@@ -3,14 +3,17 @@
 
 #author: Stephen Caulfield
 
-import sys
+#imports library with functions that take arguments from command line
+import sys  
 
 y = 0
 z = 0
 
-txt = sys.argv[1]
+#Takes argument from command line for txt file.
+txt = sys.argv[1]   
 
-with open(txt, "rt") as f:
+#Loops through each letter in submitted txt file and increments y with each 'e' found.
+with open(txt, "rt") as f:  
     while 1:
         g = f.read(1)
         if g == "e" or g == "E":

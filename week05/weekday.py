@@ -10,8 +10,10 @@ now = datetime.datetime.now()
 #converts date to current day
 day = now.strftime("%A")
 
+weekend = ["Friday", "Saturday", "Sunday"]
+
 #checks if the day is either the weekend; if not, then its a weekday
-if day == "Friday" or day == "Saturday" or day == "Sunday":
+if day in weekend:
     print("It is the weekend, yay!")
 else:
     print("Yes, unfortunately today is a weekday.")
