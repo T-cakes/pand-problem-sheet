@@ -1,5 +1,4 @@
-#displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 
-#in the range [0, 4] on the one set of axes.
+#displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on the one set of axes.
 
 #author: Stephen Caulfield
 
@@ -24,9 +23,10 @@ plt.xlabel('x')
 plt.ylabel('Function')
 
 #Puts a dot at each point on the graph (https://stackoverflow.com/questions/12608788/changing-the-tick-frequency-on-x-or-y-axis-in-matplotlib)
-plt.xticks(np.arange(min(x), max(x)+1, 1))    
+plt.xticks(np.arange(min(x), max(x)+1, 1))
+plt.yticks(np.arange(0, 80, 10)) 
 
-plt.grid(color='grey', linestyle='-', linewidth=.1) 
+plt.grid(color='grey', linestyle='-', linewidth=.6) 
 
 plt.savefig('graph.png')  
 

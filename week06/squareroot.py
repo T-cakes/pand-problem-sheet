@@ -6,29 +6,35 @@
 
 
 def sqrt(num):
-    y = 0.0 
-    x = 1.0 #will equal closest squared integer to input
+    sqrnum = 0.0 
+
+    basenum = 1.0 
 
     #Loops through numbers to find closest squared number to input number
-    while y < num:
-        y = x**2
-
-        if y < num:
-            x += 1
+    while sqrnum < num:
         
+        sqrnum = basenum**2
+
+        if sqrnum < num:
+            basenum += 1
+
         else:
-            x -= 1
+            basenum -= 1
 
     #Takes the closest squared integer under input and subtracts it from input
-    y = x**2    
-    z = num - y
+    sqrnum = basenum**2    
 
-    n = x*2 #denominator of the answer is x times 2
-    o = z/n #gets decimal part of answer   
-    p = x + o #puts the whole number and decimal for the approximate square root of input
-    return p
+    numerator = num - sqrnum 
 
-#calls function 'sqrt'
+    denominator = basenum*2
+
+    #gets decimal part of answer   
+    decnum = numerator/denominator 
+
+    answer = basenum + decnum 
+
+    return answer
+
 var = sqrt(138)
 
 print(var)
