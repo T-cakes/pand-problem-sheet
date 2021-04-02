@@ -1,4 +1,7 @@
 # pand-problem-sheet
+---
+
+Author: Stephen Caulfield
 
 ---
 
