@@ -35,5 +35,3 @@ while i != 1:
     result += str(i) + " "
 
 print(result)
-    
-

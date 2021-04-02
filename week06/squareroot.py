@@ -12,7 +12,7 @@ def sqrt(num):
 
     #Loops through numbers to find closest squared number to input number
     while sqrnum < num:
-        
+
         sqrnum = basenum**2
 
         if sqrnum < num:
@@ -38,4 +38,3 @@ def sqrt(num):
 var = sqrt(138)
 
 print(var)
-
